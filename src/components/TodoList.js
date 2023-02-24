@@ -1,12 +1,9 @@
-import { useEffect } from "react";
 import { useTodo } from "../contexts/Todo";
 import TodoCard from "./TodoCard";
 
 export default function TodoList() {
 
     const { todos } = useTodo();
-
-    useEffect(() => {console.log(todos);}, [todos]);
 
     return (
         <>
